@@ -32,24 +32,24 @@ fetch().then((Response) => {
     document.querySelector("#Ttest").innerHTML = Response.data.totalTests;
 })
 /* Disable Inspect Element */
-/* document.onkeydown = function(e) {
+document.onkeydown = function(e) {
     if(event.keyCode == 123) {
        return false;
     }
-    Ctrl+Shift+I
+   /*  Ctrl+Shift+I */
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
        return false;
     }
-    Ctrl+Shift+C
+    /* Ctrl+Shift+C */
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
        return false;
     }
-    Ctrl+Shift+J
+    /* Ctrl+Shift+J */
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
        return false;
     }
-    Ctrl+Shift+U
+    /* Ctrl+Shift+U */
     if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
        return false;
     }
-  } */
+  }
