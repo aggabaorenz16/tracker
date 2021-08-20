@@ -3,97 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./icon/icon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Covid Tracker | Phillipines</title>
 </head>
-<body>
+<body oncontextmenu="return">
     <div class="main">
         <div class="title">
             <h3>Covid Tracker Philippines</h3>
         </div>
     </div>
+   <!--  <div class="img">
+        <img src="./icon.png">
+    </div> -->
     <div class="main-body">
         <div class="box">
-            <div class="img">
-                <img src="./icon.png" alt="" srcset="">
+            <div class="Country">
+                <span>
+                    COUNTRY : <span id="country"></span>
+                </span>
             </div>
             <div class="Recovered">
-                <span style="color: green;">
+                <span>
                     RECOVERED : <span id="recovered"></span>
                 </span>
             </div>
-            <div class="Case">
-                <span style="color: red;">
-                    TODAY CASE : <span id="case"></span>
-                </span>
-            </div>
-            <div class="tdeaths">
-                <span style="color: red;">
-                    TODAY DEATHS : <span id="tdeaths"></span>
-                </span>
-            </div>
             <div class="deaths">
-                <span style="color: red;">
+                <span>
                     DEATHS : <span id="deaths"></span>
                 </span>
             </div>
             <div class="active">
-                <span style="color: red;">
-                    ACTIVE : <span id="active"></span>
+                <span>
+                    PH CASES : <span id="Ttest"></span>
                 </span>
             </div>
-            <div class="critical">
-                <span style="color: red;">
-                    CRITICAL : <span id="critical"></span>
-                </span>
+        </div>
+       <div class="title">
+           <div class="prev">
+            <h3>PREVENTION OF CORONAVIRUS</h3>
+           </div>
+       </div>
+        <div class="imgs">
+            <div class="img">
+                <img src="./icon/wash-hand.png">
+                <p>Wash Your Hands</p>
+                <h6>Wash your hands to Avoid<br>Virus.</h6>
             </div>
-            <div class="Ttest">
-                <span style="color: red;">
-                    TOTAL TEST : <span id="Ttest"></span>
-                </span>
+            <div class="img">
+                <img src="./icon/face.png">
+                <p>Avoid Touching</p>
+                <h6>Avoid Touching to Avoid<br>Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/avoid.png">
+                <p>Avoid Close</p>
+                <h6>Avoid Close to Avoid<br>Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/mouth-tissue.png">
+                <p>Cover Your Mouth</p>
+                <h6>Cover your mouth to Avoid<br>Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/trash.png">
+                <p>Use Dustbin</p>
+                <h6>Use Dustbin to Avoid<br>Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/soap.png">
+                <p>Clean and Disinfect</p>
+                <h6>Clean and Disinfect to<br>Avoid Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/home2.png">
+                <p>Stay at Home</p>
+                <h6>Stay at home to Avoid<br>Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/wear.PNG">
+                <p>Wear your mask</p>
+                <h6>Wear your mask to Avoid<br>Virus.</h6>
+            </div>
+            <div class="img">
+                <img src="./icon/sleep.PNG">
+                <p>Avoid Crowd</p>
+                <h6>Avoid Crowd to Avoid<br>Virus.</h6>
+            </div>
+        </div>
+        <div class="symptoms">
+            <div class="title">
+                <h3>HAVE SYMPTOMS OF COVID-19</h3>
             </div>
         </div>
         <div class="imgs">
             <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/wash-hand.png">
-                <p>Wash Your Hands</p>
+                <img src="./icon/home.png">
+                <p>Stay at Home</p>
+                <h6>If you have symptoms<br>Stay At Home </h6>
             </div>
             <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/face.png">
-                <p>Avoid Touching</p>
+                <img src="./icon/call.png">
+                <p>Call for Emergency</p>
+                <h6>If you have symptoms<br>Call immediately</h6>
             </div>
             <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/avoid.png">
-                <p>Avoid close</p>
+                <img src="./icon/ambulance.png">
+                <p>Call Ambulance</p>
+                <h6>If you have symptoms<br>Call immediately </h6>
             </div>
-            <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/mouth-tissue.png">
-                <p>Cover Your Mouth</p>
             </div>
-            <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/trash.png">
-                <p>Use Dustbin</p>
-            </div>
-            <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/soap.png">
-                <p>Clean and Disinfect</p>
-            </div>
-            <div class="img">
-                <img src="http://covidproject-ph.herokuapp.com/images/icons/home2.png">
-                <p>Stay At Home</p>
-            </div>
-            <div class="img">
-                <img src="./wear.PNG">
-                <p>Wear your mask</p>
-            </div>
-            <div class="img">
-                <img src="./sleep.PNG">
-                <p>Avoid Crowd</p>
-            </div>
-        </div>
         <footer>
             <span>
                 <a href="https://www.facebook.com/aggabaorenz16/" target="_blank">Request Code</a>
@@ -106,5 +127,5 @@
             </span>
         </footer>
 </body>
-<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 </html>
